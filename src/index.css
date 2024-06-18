@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("/bg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  width: 80vw;
+  height: 90vh;
+  background-color: rgba(0, 3, 7, 0.75);
+  backdrop-filter: blur(19px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  
+}
+
+.loading {
+  padding: 50px;
+  font-size: 36px;
+  border-radius: 10px;
+  background-color: rgba(17, 25, 40, 0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    width: 90vw;
+    
+  }
+  
+  .loading {
+    padding: 40px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 95vw;
+    
+  }
+  
+  .loading {
+    padding: 30px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100vw;
+
+    flex-direction: row;
+    padding: 20px;
+    overflow-x: scroll;
+  }
+  
+  .loading {
+    padding: 20px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+  }
+  
+  .loading {
+    padding: 15px;
+    font-size: 20px;
+  }
+}

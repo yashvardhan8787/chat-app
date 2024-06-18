@@ -1,0 +1,217 @@
+.chatList {
+  flex: 1;
+  overflow: scroll;
+  height: 800px;
+}
+
+.chatList .search {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.chatList .search .searchBar {
+  flex: 1;
+  background-color: rgba(17, 25, 40, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.chatList .search .searchBar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  flex: 1;
+}
+
+.chatList .search .searchBar img {
+  width: 20px;
+  height: 20px;
+}
+
+.chatList .search .add {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(17, 25, 40, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.chatList .item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #dddddd35;
+}
+
+.chatList .item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chatList .item .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chatList .item .texts span {
+  font-weight: 500;
+}
+
+.chatList .item .texts p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.chatList::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .chatList {
+    width: 96vw;
+    height: 700px; /* Adjust as needed */
+  }
+}
+
+@media (max-width: 992px) {
+  .chatList {
+    height: 600px; /* Adjust as needed */
+  }
+
+  .chatList .search {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .chatList .search .searchBar {
+    gap: 15px;
+    padding: 8px;
+  }
+
+  .chatList .search .add {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+  }
+
+  .chatList .item {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .chatList .item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .chatList .item .texts {
+    gap: 8px;
+  }
+
+  .chatList .item .texts span {
+    font-size: 14px;
+  }
+
+  .chatList .item .texts p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+
+  .chatList .search {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .chatList .search .searchBar {
+    gap: 10px;
+    padding: 6px;
+  }
+
+  .chatList .search .add {
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+  }
+
+  .chatList .item {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .chatList .item img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .chatList .item .texts {
+    gap: 6px;
+  }
+
+  .chatList .item .texts span {
+    font-size: 12px;
+  }
+
+  .chatList .item .texts p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .chatList {
+    height: 100%; /* Adjust as needed */
+  }
+
+  .chatList .search {
+    gap: 4px;
+    padding: 4px;
+  }
+
+  .chatList .search .searchBar {
+    gap: 8px;
+    padding: 4px;
+  }
+
+  .chatList .search .add {
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+  }
+
+  .chatList .item {
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .chatList .item img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .chatList .item .texts {
+    gap: 4px;
+  }
+
+  .chatList .item .texts span {
+    font-size: 10px;
+  }
+
+  .chatList .item .texts p {
+    font-size: 8px;
+  }
+}
