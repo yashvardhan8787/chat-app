@@ -1,7 +1,7 @@
 .chatList {
   flex: 1;
   overflow: scroll;
-  height: 800px;
+  height: 76vh;
 }
 
 .chatList .search {
@@ -174,12 +174,13 @@
 
 @media (max-width: 576px) {
   .chatList {
-    height: 100%; /* Adjust as needed */
+    height: 90vh; /* Adjust as needed */
   }
 
   .chatList .search {
     gap: 4px;
     padding: 4px;
+    margin: 6px;
   }
 
   .chatList .search .searchBar {
